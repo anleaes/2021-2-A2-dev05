@@ -1,5 +1,8 @@
-{% extends 'base.html' %}
 
+{% extends 'base.html' %}
+{% load static %}
+
+{% load widget_tweaks %}
 {% block title %}
     {{ block.super }}
 {% endblock title %}
@@ -7,19 +10,24 @@
 {% block body %}
 
 <!-- Codigo html especifico desse arquivo -->
-<section>
-    <h1>Projeto Dualidade</h1>
-    <span>um novo jeito de solucionar problemas</span>
-</section>
-<section>
-    <div class="desafios">
-        <div class="desafio">
-            <h2>Solução de problemas</h2>
-            <span></span>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="{% static 'img/hero-img.svg' %}" alt="" class="img-fluid">
+      </div>
+
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
         </div>
-        <div class="desafio"></div>
-        <div class="desafio"></div>
+      </div>
+
     </div>
-</section>
+  </section><!-- End Hero Section -->
 
 {% endblock body %}
