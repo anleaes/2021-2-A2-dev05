@@ -46,10 +46,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'core.apps.CoreConfig', 
     'categories.apps.CategoriesConfig',
-    'socialnetworks.apps.SocialnetworksConfig',
-    'products.apps.ProductsConfig',
     'clients.apps.ClientsConfig',
-    'orders.apps.OrdersConfig',
+    'demands.apps.DemandsConfig',
     'accounts.apps.AccountsConfig',
 ]
 

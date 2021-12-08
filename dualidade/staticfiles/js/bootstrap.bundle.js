@@ -3521,7 +3521,7 @@
           state.scrollParents = {
             reference: isElement(reference) ? listScrollParents(reference) : reference.contextElement ? listScrollParents(reference.contextElement) : [],
             popper: listScrollParents(popper)
-          }; // Orders the modifiers based on their dependencies and `phase`
+          }; // demands the modifiers based on their dependencies and `phase`
           // properties
 
           var orderedModifiers = orderModifiers(mergeByName([].concat(defaultModifiers, state.options.modifiers))); // Strip out disabled modifiers

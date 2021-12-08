@@ -22,10 +22,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('categorias/', include('categories.urls', namespace='categories')),
-    path('redessociais/', include('socialnetworks.urls', namespace='socialnetworks')),
-    path('produtos/', include('products.urls', namespace='products')),
-    path('clientes/', include('clients.urls', namespace='clients')),
-    path('pedidos/', include('orders.urls', namespace='orders')),
+    path('pedidos/', include('demands.urls', namespace='demands')),
     path('contas/', include('accounts.urls', namespace='accounts')),
     path('', include('core.urls', namespace='core')),
 ]
